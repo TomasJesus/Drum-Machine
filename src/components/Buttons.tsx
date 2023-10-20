@@ -3,8 +3,9 @@ import Button from './Button';
 
 type Props = {
     sounds: Sounds;
-    on: Boolean;
+    on: boolean;
     volume: number;
+    onPress: (word: string) => void;
 };
 
 function Buttons(props: Props) {
@@ -13,65 +14,83 @@ function Buttons(props: Props) {
             <Button
                 sound={props.sounds.sounds[0].sound}
                 name={props.sounds.sounds[0].name}
-                on={props.on}
+                power={props.on}
                 volume={props.volume}
-                keyboardKey="Q"
+                keyboardKeyH="Q"
+                keyboardKeyL="q"
+                onPress={props.onPress}
             />
             <Button
                 sound={props.sounds.sounds[1].sound}
                 name={props.sounds.sounds[1].name}
-                on={props.on}
+                power={props.on}
                 volume={props.volume}
-                keyboardKey="W"
+                keyboardKeyH="W"
+                keyboardKeyL="w"
+                onPress={props.onPress}
             />
             <Button
                 sound={props.sounds.sounds[2].sound}
                 name={props.sounds.sounds[2].name}
-                on={props.on}
+                power={props.on}
                 volume={props.volume}
-                keyboardKey="E"
+                keyboardKeyH="E"
+                keyboardKeyL="e"
+                onPress={props.onPress}
             />
             <Button
                 sound={props.sounds.sounds[3].sound}
                 name={props.sounds.sounds[3].name}
-                on={props.on}
+                power={props.on}
                 volume={props.volume}
-                keyboardKey="A"
+                keyboardKeyH="A"
+                keyboardKeyL="a"
+                onPress={props.onPress}
             />
             <Button
                 sound={props.sounds.sounds[4].sound}
                 name={props.sounds.sounds[4].name}
-                on={props.on}
+                power={props.on}
                 volume={props.volume}
-                keyboardKey="S"
+                keyboardKeyH="S"
+                keyboardKeyL="s"
+                onPress={props.onPress}
             />
             <Button
                 sound={props.sounds.sounds[5].sound}
                 name={props.sounds.sounds[5].name}
-                on={props.on}
+                power={props.on}
                 volume={props.volume}
-                keyboardKey="D"
+                keyboardKeyH="D"
+                keyboardKeyL="d"
+                onPress={props.onPress}
             />
             <Button
                 sound={props.sounds.sounds[6].sound}
                 name={props.sounds.sounds[6].name}
-                on={props.on}
+                power={props.on}
                 volume={props.volume}
-                keyboardKey="Z"
+                keyboardKeyH="Z"
+                keyboardKeyL="z"
+                onPress={props.onPress}
             />
             <Button
                 sound={props.sounds.sounds[7].sound}
                 name={props.sounds.sounds[7].name}
-                on={props.on}
+                power={props.on}
                 volume={props.volume}
-                keyboardKey="X"
+                keyboardKeyH="X"
+                keyboardKeyL="x"
+                onPress={props.onPress}
             />
             <Button
                 sound={props.sounds.sounds[8].sound}
                 name={props.sounds.sounds[8].name}
-                on={props.on}
+                power={props.on}
                 volume={props.volume}
-                keyboardKey="C"
+                keyboardKeyH="C"
+                keyboardKeyL="c"
+                onPress={props.onPress}
             />
         </div>
     );
