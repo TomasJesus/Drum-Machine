@@ -31,15 +31,13 @@ function Button(props: Props) {
         }
     }, [props.volume]);
 
-    const handleKeyPress = (event: KeyboardEvent) => {
-        if (event.key === props.keyboardKey) {
-            playSound();
-        }
-    };
-
     useEffect(() => {
         // Add an event listener for the keydown event
-
+        const handleKeyPress = (event: KeyboardEvent) => {
+            if (event.key == props.keyboardKey) {
+                playSound();
+            }
+        };
         // Attach the event listener to the document
         document.addEventListener('keydown', handleKeyPress);
 
@@ -50,7 +48,7 @@ function Button(props: Props) {
     }, [props.keyboardKey]);
 
     return (
-        <div className="drum-pad" id={props.name} onClick={playSound} onKeyDown={handleKeyPress}>
+        <div className="drum-pad" id={props.name} onClick={playSound}>
             <button onClick={playSound}>{props.keyboardKey}</button>
             <audio ref={audioRef} className="clip" id={props.keyboardKey} src={props.sound}>
                 <source src={props.sound} type="audio/mp3" />
