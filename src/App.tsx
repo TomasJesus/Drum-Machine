@@ -8,13 +8,8 @@ import ControlPanel from './components/ControlPanel';
 function App() {
     const allSounds = sounds as Sounds;
 
-    const [onState, setOnState] = useState(true);
     const [displayWord, setDisplayWord] = useState('');
     const [volumeLevel, setVolumeLevel] = useState(0.5);
-
-    const powerSwitch = () => {
-        setOnState(!onState);
-    };
 
     const changeDisplayWord = (word: string) => {
         setDisplayWord(word);
@@ -26,17 +21,12 @@ function App() {
 
     return (
         <div id="drum-machine">
-            <Buttons
-                sounds={allSounds}
-                on={onState}
-                volume={volumeLevel}
-                onPress={changeDisplayWord}
-            />
+            <Buttons sounds={allSounds} volume={volumeLevel} onPress={changeDisplayWord} />
             <ControlPanel
-                powerSwitch={powerSwitch}
-                displayWorkd={displayWord}
+                displayWord={displayWord}
                 setVolume={setVolume}
-                on={onState}
+                volumeLevel={volumeLevel}
+                changeDisplayWord={changeDisplayWord}
             />
         </div>
     );

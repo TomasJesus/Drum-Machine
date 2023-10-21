@@ -3,7 +3,6 @@ import { useState, useRef, useEffect } from 'react';
 type Props = {
     sound: string;
     name: string;
-    power: boolean;
     volume: number;
     keyboardKeyH: string;
     keyboardKeyL: string;
@@ -14,11 +13,8 @@ function Button(props: Props) {
     const audioRef = useRef<HTMLAudioElement | null>(null);
 
     const playSound = () => {
-        console.log('props.power:', props.power);
-        if (props.power == true) {
-            audioRef.current?.play();
-            props.onPress(props.name);
-        }
+        audioRef.current?.play();
+        props.onPress(props.name);
     };
 
     useEffect(() => {
@@ -37,15 +33,6 @@ function Button(props: Props) {
 
     useEffect(() => {
         const handleKeyPress = (event: KeyboardEvent) => {
-            console.log(
-                'event.key:',
-                event.key,
-                '; props.keyboardKeyL',
-                props.keyboardKeyL,
-                '; props.keyboardKeyH',
-                props.keyboardKeyH
-            );
-
             if (event.key === props.keyboardKeyL || event.key === props.keyboardKeyH) {
                 playSound();
             }

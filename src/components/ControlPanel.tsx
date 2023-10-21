@@ -1,31 +1,23 @@
+import { useState } from 'react';
+import VolumeSlider from './VolumeSlider';
+import Display from './Display';
+
 type Props = {
-    powerSwitch: () => void;
-    displayWorkd: string;
+    displayWord: string;
     setVolume: (volumeLevel: number) => void;
-    on: boolean;
+    volumeLevel: number;
+    changeDisplayWord: (word: string) => void;
 };
 
 function ControlPanel(props: Props) {
-    let onOff = '';
-
-    if (props.on) {
-        onOff = 'OFF';
-    } else {
-        onOff = 'ON';
-    }
-
-    const onOffSwitch = () => {
-        props.powerSwitch();
-        if (props.on) {
-            onOff = 'OFF';
-        } else {
-            onOff = 'ON';
-        }
-    };
-
     return (
         <div>
-            <button onClick={onOffSwitch}>{onOff}</button>
+            <VolumeSlider
+                setVolume={props.setVolume}
+                volumeLevel={props.volumeLevel}
+                changeDisplayWord={props.changeDisplayWord}
+            />
+            <Display displayWord={props.displayWord} />
         </div>
     );
 }

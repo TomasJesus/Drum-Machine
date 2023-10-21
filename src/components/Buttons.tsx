@@ -3,7 +3,6 @@ import Button from './Button';
 
 type Props = {
     sounds: Sounds;
-    on: boolean;
     volume: number;
     onPress: (word: string) => void;
 };
@@ -14,7 +13,6 @@ function Buttons(props: Props) {
             <Button
                 sound={props.sounds.sounds[0].sound}
                 name={props.sounds.sounds[0].name}
-                power={props.on}
                 volume={props.volume}
                 keyboardKeyH="Q"
                 keyboardKeyL="q"
@@ -23,7 +21,6 @@ function Buttons(props: Props) {
             <Button
                 sound={props.sounds.sounds[1].sound}
                 name={props.sounds.sounds[1].name}
-                power={props.on}
                 volume={props.volume}
                 keyboardKeyH="W"
                 keyboardKeyL="w"
@@ -32,7 +29,6 @@ function Buttons(props: Props) {
             <Button
                 sound={props.sounds.sounds[2].sound}
                 name={props.sounds.sounds[2].name}
-                power={props.on}
                 volume={props.volume}
                 keyboardKeyH="E"
                 keyboardKeyL="e"
@@ -41,7 +37,6 @@ function Buttons(props: Props) {
             <Button
                 sound={props.sounds.sounds[3].sound}
                 name={props.sounds.sounds[3].name}
-                power={props.on}
                 volume={props.volume}
                 keyboardKeyH="A"
                 keyboardKeyL="a"
@@ -50,7 +45,6 @@ function Buttons(props: Props) {
             <Button
                 sound={props.sounds.sounds[4].sound}
                 name={props.sounds.sounds[4].name}
-                power={props.on}
                 volume={props.volume}
                 keyboardKeyH="S"
                 keyboardKeyL="s"
@@ -59,7 +53,6 @@ function Buttons(props: Props) {
             <Button
                 sound={props.sounds.sounds[5].sound}
                 name={props.sounds.sounds[5].name}
-                power={props.on}
                 volume={props.volume}
                 keyboardKeyH="D"
                 keyboardKeyL="d"
@@ -68,7 +61,6 @@ function Buttons(props: Props) {
             <Button
                 sound={props.sounds.sounds[6].sound}
                 name={props.sounds.sounds[6].name}
-                power={props.on}
                 volume={props.volume}
                 keyboardKeyH="Z"
                 keyboardKeyL="z"
@@ -77,7 +69,6 @@ function Buttons(props: Props) {
             <Button
                 sound={props.sounds.sounds[7].sound}
                 name={props.sounds.sounds[7].name}
-                power={props.on}
                 volume={props.volume}
                 keyboardKeyH="X"
                 keyboardKeyL="x"
@@ -86,7 +77,6 @@ function Buttons(props: Props) {
             <Button
                 sound={props.sounds.sounds[8].sound}
                 name={props.sounds.sounds[8].name}
-                power={props.on}
                 volume={props.volume}
                 keyboardKeyH="C"
                 keyboardKeyL="c"
