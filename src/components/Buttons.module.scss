@@ -1,0 +1,10 @@
+.Buttons-Box {
+    display: grid;
+    flex-wrap: wrap;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: auto auto auto;
+    grid-auto-flow: column;
+    align-items: center;
+    justify-items: start;
+    font-family: Lucida Console, monospace;
+}

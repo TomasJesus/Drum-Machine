@@ -1,8 +1,8 @@
 import { createBoard } from '@wixc3/react-board';
-import App from '../../../App';
+import Buttons from '../../../components/Buttons';
 
 export default createBoard({
-    name: 'App',
-    Board: () => <App />,
+    name: 'Buttons',
+    Board: () => <Buttons />,
     isSnippet: true,
 });
