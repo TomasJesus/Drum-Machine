@@ -1,5 +1,6 @@
 import { Sounds } from '../types';
 import Button from './Button';
+import './Buttons.css';
 
 type Props = {
     sounds: Sounds;
@@ -9,7 +10,7 @@ type Props = {
 
 function Buttons(props: Props) {
     return (
-        <div>
+        <div className="button-container">
             <Button
                 sound={props.sounds.sounds[0].sound}
                 name={props.sounds.sounds[0].name}

@@ -1,3 +1,5 @@
+import './display.css';
+
 type Props = {
     displayWord: string;
 };

@@ -1,0 +1,9 @@
+.control-panel {
+  padding: 5%;
+  text-align: center;
+  width: 90%;
+  height: 10%;
+  border-radius: 1rem;
+  background-color: gray;
+  margin-top: 5%;
+}

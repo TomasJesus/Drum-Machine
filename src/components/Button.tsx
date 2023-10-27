@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect } from 'react';
-import Button_module from './Button.module.scss';
 import Classnames from 'classnames';
+import './Button.css';
 
 type Props = {
     sound: string;
@@ -50,8 +50,8 @@ function Button(props: Props) {
     }, [props.keyboardKeyH]);
 
     return (
-        <div className={Classnames('drum-pad', Button_module.button)} id={props.name} onClick={playSound}>
-            <button onClick={playSound}>{props.keyboardKeyH} </button>
+        <div className={'drum-pad'} id={props.name} onClick={playSound}>
+            {props.keyboardKeyH}
             <audio ref={audioRef} className="clip" id={props.keyboardKeyH} src={props.sound}>
                 <source src={props.sound} type="audio/mp3" />
             </audio>

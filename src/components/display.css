@@ -1,0 +1,12 @@
+#display {
+  border: 2px solid rgb(227, 227, 52);
+  border-radius: 1rem;
+  width: 90%;
+  text-align: center;
+  color: rgb(227, 227, 52);
+  background-color: black;
+  height: 100%;
+  padding: 1rem;
+  margin: auto;
+  margin-top: 5%;
+}

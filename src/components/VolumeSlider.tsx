@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import './VolumeSlider.css';
 
 type Props = {
     setVolume: (volumeLevel: number) => void;
@@ -18,6 +18,7 @@ function VolumeSlider(props: Props) {
     return (
         <div>
             <input
+                className="volume-slider"
                 type="range"
                 min={0}
                 max={1}

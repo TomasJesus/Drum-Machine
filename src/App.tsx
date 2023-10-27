@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import styles from './App.module.scss';
+import './App.css';
 import Buttons from './components/Buttons';
 import { Sounds } from './types';
 import sounds from './SoundLinks.json';

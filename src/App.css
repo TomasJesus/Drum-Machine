@@ -1,0 +1,15 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+#drum-machine {
+  width: 35vw;
+  background-color: rgb(80, 80, 80);
+  margin: auto;
+  padding: 1.5%;
+  border-radius: 1rem;
+  border: 3px solid rgb(227, 227, 52);
+}

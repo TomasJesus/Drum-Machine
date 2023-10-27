@@ -1,0 +1,8 @@
+.button-container {
+  padding: 5%;
+  text-align: center;
+  background-color: gray;
+  width: 90%;
+  height: 90%;
+  border-radius: 1rem;
+}

@@ -1,6 +1,6 @@
-import { useState } from 'react';
 import VolumeSlider from './VolumeSlider';
 import Display from './Display';
+import './ControlPanel.css';
 
 type Props = {
     displayWord: string;
@@ -11,7 +11,7 @@ type Props = {
 
 function ControlPanel(props: Props) {
     return (
-        <div>
+        <div className="control-panel">
             <VolumeSlider
                 setVolume={props.setVolume}
                 volumeLevel={props.volumeLevel}
